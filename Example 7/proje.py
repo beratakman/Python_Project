@@ -3,20 +3,89 @@ from datetime import datetime
 from datetime import timedelta
 import time
 
-currentTime = datetime.today()
+##############################################################
+# Yaş Bulma
+
+currentTime = date.today()
 
 userYear0 = int(input("Lütfen Doğduğunuz Yılı Girin. (Sadece Yıl):\n"))
 userMonth0 =  int(input("Lütfen Doğduğunuz Ayı Girin. (Sadece Ay):\n"))
 userDay0 =  int(input("Lütfen Doğduğunuz Günü Girin. (Sadece Gün):\n"))
 
-userTime0 = datetime(userYear0, userMonth0, userDay0)
-
-userTime = (currentTime - userTime0) / 365
-
-print(f"{userTime} Yaşındasınız.")
+userTime = date(userYear0, userMonth0, userDay0)
+dayİnBetween = currentTime - userTime
+dayİnBetween = dayİnBetween.days # days == Datetime
 
 
+userYear, userDay = divmod(dayİnBetween, 365)
+userMonth, userDay = divmod(userDay, 30)
+
+# userYear --> Yıl
+# userMonth --> Ay
+# userDay --> Gün
+##############################################################
+# Ara Bölge
+
+
+
+##############################################################
+# Sonraki Yaşına Ne Kadar Zaman Geçince Gireceğini
+ 
+releaseDate0 = date(1, 1, 1)
+releaseDate = date(2, 1, 1)
+
+if userMonth == 0:
+    userMonth000 = userMonth + 1
+    
+    userAge0 = date(userYear, userMonth000, userDay)
+    userAge0 = userAge0.day
+    
+    oneYear = releaseDate - releaseDate0
+    oneYear = oneYear.days
+    
+    oneYearLater = userAge0 + oneYear
+    
+    currentTime = currentTime.day
+    
+    timeİnBetween = oneYearLater - currentTime
+    
+
+    
+else:
+    userAge = date(userYear, userMonth, userDay)
+    userAge = userAge.day
+
+    oneYear = releaseDate - releaseDate0
+    oneYear = oneYear.days
+    
+    oneYearLater = userAge + oneYear
+    
+    currentTime = currentTime.day
+    
+    timeİnBetween = oneYearLater - currentTime
+    
+
+
+
+userLastMonth0, userLastDay0 = divmod(timeİnBetween, 30)
+
+userLastMonth = userLastMonth0 - userMonth
+userLastDay = userLastDay0 - userDay
+
+nextAge = userYear + 1
+nextMonth = userLastMonth - 1
+nextDay = abs(userLastDay)
+
+print(f"{userYear} yaşındasınız ve yaklaşık {nextMonth} ay, {nextDay} gün sonra {nextAge} yaşına gireceksiniz.")
+
+exit()
+###############################################
+userLastYear = timedelta(days=365)
+userLastMonth, userLastDay = divmod(userLastYear,30)
+print(userLastMonth)
+print(userLastDay)
 def userBirthDate(year,month,day):
+###############################################
     userBirthDate0 = time.struct_time(year, month, day, 0, 0, 0, 0, 0, None)
     return userBirthDate0
 
