@@ -45,9 +45,9 @@ if userMonth == 0:
     
     oneYearLater = userAge0 + oneYear
     
-    currentTime = currentTime.day
+    currentTime000 = currentTime.day
     
-    timeİnBetween = oneYearLater - currentTime
+    timeİnBetween = oneYearLater - currentTime000
     
 
     
@@ -60,22 +60,25 @@ else:
     
     oneYearLater = userAge + oneYear
     
-    currentTime = currentTime.day
+    currentTime000 = currentTime.day
     
-    timeİnBetween = oneYearLater - currentTime
+    timeİnBetween = oneYearLater - currentTime000
     
 
-
+currentTime0 = currentTime.year
 
 userLastMonth0, userLastDay0 = divmod(timeİnBetween, 30)
 
 userLastMonth = userLastMonth0 - userMonth
 userLastDay = userLastDay0 - userDay
 
-nextAge = userYear + 1
-nextMonth = userLastMonth - 1
+if userYear0 <= currentTime0:
+    nextMonth = userLastMonth
+else:
+    nextMonth = userLastMonth  
+    
 nextDay = abs(userLastDay)
-
+nextAge = userYear + 1
 print(f"{userYear} yaşındasınız ve yaklaşık {nextMonth} ay, {nextDay} gün sonra {nextAge} yaşına gireceksiniz.")
 
 exit()
