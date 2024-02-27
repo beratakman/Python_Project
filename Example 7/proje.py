@@ -24,11 +24,6 @@ userMonth, userDay = divmod(userDay, 30)
 # userMonth --> Ay
 # userDay --> Gün
 ##############################################################
-# Ara Bölge
-
-
-
-##############################################################
 # Sonraki Yaşına Ne Kadar Zaman Geçince Gireceğini
  
 releaseDate0 = date(1, 1, 1)
@@ -63,23 +58,18 @@ else:
     currentTime000 = currentTime.day
     
     timeİnBetween = oneYearLater - currentTime000
-    
 
-currentTime0 = currentTime.year
 
 userLastMonth0, userLastDay0 = divmod(timeİnBetween, 30)
 
 userLastMonth = userLastMonth0 - userMonth
 userLastDay = userLastDay0 - userDay
 
-if userYear0 <= currentTime0:
-    nextMonth = userLastMonth
+if userTime <= currentTime:
+    nextMonth = userLastMonth - 1 
 else:
     nextMonth = userLastMonth  
     
 nextDay = abs(userLastDay)
 nextAge = userYear + 1
 print(f"{userYear} yaşındasınız ve yaklaşık {nextMonth} ay, {nextDay} gün sonra {nextAge} yaşına gireceksiniz.")
-
-exit()
-
