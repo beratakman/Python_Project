@@ -47,19 +47,27 @@ maxFunction = 0 # Başlangıçta toplam fonksiyon değişkeninde hiç bir değer
 for listedFunctions in functionClasses: # fonksiyon isimleri yazan listenin içinden listeleri tek tek sıralıyoruz
     if len(listedFunctions) > maxFunction: # eğer herhangi bir fonksiyon sayısı bizim şuanki sayımızdan büyükse
         maxFunction = len(listedFunctions) # toplam fonksiyon değişkenine bulduğumuz en büyük rakamı seçtirtiyoruz  
-        
-
-for titles in functionTitles:
-    print(titles,end="")
-    print(" " * 17,end="")
+     
+with open("functions.txt","w") as toWrite:   
+    for titles in functionTitles:
+        print(titles,end="")
+        print(" " * 19,end="")
     
-        
-for x in range(maxFunction):
-    print()
-    for listedFunctions in functionClasses:
-        if x >= len(listedFunctions):
-            print("-------",end="")
-            print(" " * 23,end="")
-        else:
-            print(listedFunctions[x],end="")
-            print(" " * (30 - len(listedFunctions[x])),end="")
+        toWrite.write(titles)
+        toWrite.write(titles)
+    for x in range(maxFunction):
+        print()
+        for listedFunctions in functionClasses:
+            if x >= len(listedFunctions):
+                print("-------",end="")
+                print(" " * 23,end="")
+            
+                toWrite.write("-------")
+                toWrite.write(" " * 23)
+    
+            else:
+                print(listedFunctions[x],end="")
+                print(" " * (30 - len(listedFunctions[x])),end="")
+
+                toWrite.write(listedFunctions[x])
+                toWrite.write(" " * (30 - len(listedFunctions[x])))
