@@ -48,3 +48,18 @@ for listedFunctions in functionClasses: # fonksiyon isimleri yazan listenin içi
     if len(listedFunctions) > maxFunction: # eğer herhangi bir fonksiyon sayısı bizim şuanki sayımızdan büyükse
         maxFunction = len(listedFunctions) # toplam fonksiyon değişkenine bulduğumuz en büyük rakamı seçtirtiyoruz  
         
+
+for titles in functionTitles:
+    print(titles,end="")
+    print(" " * 17,end="")
+    
+        
+for x in range(maxFunction):
+    print()
+    for listedFunctions in functionClasses:
+        if x >= len(listedFunctions):
+            print("-------",end="")
+            print(" " * 23,end="")
+        else:
+            print(listedFunctions[x],end="")
+            print(" " * (30 - len(listedFunctions[x])),end="")
