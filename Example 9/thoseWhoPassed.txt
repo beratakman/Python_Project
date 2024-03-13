@@ -1,0 +1,44 @@
+Lyla Dawson, Matematik,89.5,98,67,100
+Cora Gill Maryam, Matematik Müh,83.4,76,78,93
+Jorgie James, Bilgisayar Müh,79.7,81,62,92
+Keira Khan, Bilgisayar Müh,76.5,77,46,99
+Scarlett Stone, Matematik,89.5,98,67,100
+Arabella Wallace, Bilgisayar Müh,74.8,90,66,70
+Darcey Woods, Fizik,77.9,42,87,98
+Robin Spencer, Matematik,94.89999999999999,89,98,97
+Jamie Dawson, Fizik Müh,77.9,42,87,98
+Val Kaur, Matematik Müh,76.3,67,54,100
+Morgan Pearson, Bilgisayar Müh,77.9,42,87,98
+Bailey Gill River, Fizik,85.2,87,77,90
+Alexis Hamilton, Fizik,77.9,42,87,98
+Shay Smith, Matematik Müh,83.0,76,70,98
+Silver Barker, Matematik,79.7,81,62,92
+Brook Kaur, Matematik Müh,73.0,80,70,70
+Robert Harper, Kimya,82.6,96,86,70
+Michael Alex, Kimya Müh,81.80000000000001,86,56,98
+David Knight, Bilgisayar Müh,77.9,42,87,98
+Joseph Dillon Spencer, Matematik Müh,89.5,98,67,100
+Thomas James Zachary, Gıda Müh,81.30000000000001,86,77,81
+Christopher Dawson, Bilgisayar Müh,79.7,81,62,92
+Paul Rufus Pearson, Matematik,81.2,60,84,95
+Mark Conor Smith, Kimya Müh,90.6,96,86,90
+Donald Kenneth Eğilmez, Kimya Müh,86.0,85,79,92
+Steven Johnson, Fizik,80.69999999999999,89,68,84
+George Aston, Kimya Müh,73.8,66,76,78
+Brian John, Kimya,80.8,86,90,70
+Kevin Maxwell Kennedy, Matematik,72.5,62,85,71
+Jason Rogers, Fizik Müh,72.5,85,26,98
+Glen Francis, Fizik,80.4,88,76,78
+Lee Fletcher, Bilgisayar Müh,73.1,93,56,71
+Brook Duncan, Bilgisayar Müh,88.7,98,67,98
+Phoenix Phillips, Matematik,77.80000000000001,67,87,79
+Alicia Jody Pearson, Fizik,79.2,56,76,99
+Ariella Hamilton, Fizik,74.5,36,87,94
+Rose Jasmine Francis, Matematik,82.2,88,66,90
+Lara Mccarthy, Kimya Müh,79.0,76,94,70
+Blossom Cooper, Bilgisayar Müh,78.6,67,79,87
+Stella Thompson, Fizik,89.5,95,78,94
+Ariella Davies, Fizik Müh,71.0,17,89,98
+Lily Rose Kelly, Matematik,78.8,75,81,80
+Gabe Wells, Bilgisayar Müh,73.8,56,94,72
+Jamie Henderson, Matematik,72.4,28,88,94
