@@ -48,7 +48,7 @@ for listedFunctions in functionClasses: # fonksiyon isimleri yazan listenin içi
     if len(listedFunctions) > maxFunction: # eğer herhangi bir fonksiyon sayısı bizim şuanki sayımızdan büyükse
         maxFunction = len(listedFunctions) # toplam fonksiyon değişkenine bulduğumuz en büyük rakamı seçtirtiyoruz  
      
-with open("functions.txt","w") as toWrite:   
+with open("Example 8\\functions.txt","w") as toWrite:   
     for titles in functionTitles:
         print(titles,end="")
         print(" " * 19,end="")
