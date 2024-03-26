@@ -21,8 +21,8 @@ def dosya_isimlerini_degistir(klasor_yolu, yeni_isim):
         os.rename(dosya_yolu, yeni_dosya_yolu)
 
 # Klasör yolunu ve yeni ismi belirtin
-klasor_yolu = "E:\www\Liberte\Liberte-V1\images\daily-shoes"
-yeni_isim = "daily-shoes-"
+klasor_yolu = ""
+yeni_isim = ""
 
 # Fonksiyonu çağırarak dosya isimlerini değiştirin
 dosya_isimlerini_degistir(klasor_yolu, yeni_isim)
