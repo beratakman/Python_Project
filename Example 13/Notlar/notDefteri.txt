@@ -1,0 +1,1 @@
+Güvenli şifreler oluşturabilen bir uygulama. Kullanıcılar şifre uzunluğunu ve hangi karakterlerin kullanılacağını belirleyebilir.
